@@ -1,5 +1,12 @@
 {
-    "dependencies": {},
+    "name": "cours-local-storage",
+    "description": "Sample repository to present LocalStorage to students.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lelexxx/cours-local-storage.git"
+    },
+    "author": "Alexandre Ruiz <rruiz.alex@gmail.com>",
+    "keywords": ["cours", "teach", "local", "storage"],
     "devDependencies": {
         "ts-loader": "^9.3.0",
         "typescript": "^4.6.4",
