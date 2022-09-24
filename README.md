@@ -17,3 +17,4 @@ NB : *Webpack est utilisé dans ce projet uniquement pour convertir le TypeScrip
 ## Ressources
 
 * [La documentation](https://developer.mozilla.org/fr/docs/Web/API/Storage)
+* [Un article sur le Local Storage](https://dev.to/dboatengx/javascript-local-storage-explained-1di6)
