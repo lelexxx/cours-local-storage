@@ -1,3 +1,4 @@
+
 export default class GenericLocalStorage {
     private storage: Storage;
 
@@ -9,13 +10,15 @@ export default class GenericLocalStorage {
       return this.storage.getItem(key);
     }
 
-    addOrUpdate(key: string, item: any): void {
-        let strValue = item;
+    addOrUpdate<T>(key: string, item: T): T {
+        let strValue = item.toString();
         if(!(item instanceof String)) {
           strValue = JSON.stringify(item);
         }
 
         this.storage.setItem(key, strValue);
+
+        return item;
     }
 
     clear(key: string | null = null): void{
