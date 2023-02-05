@@ -21,11 +21,19 @@ export default class GenericLocalStorage {
         return item;
     }
 
-    clear(key: string | null = null): void{
+    clear(key: string): this{
       if(key === null) {
-        this.storage.clear();
-      } else {
-        this.storage.removeItem(key);
+        throw new Error('Key is required');
       }
+
+      this.storage.removeItem(key);
+
+      return this;
+    }
+
+    clearAll(): this{
+      this.storage.clear();
+
+      return this;
     }
 }
