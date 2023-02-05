@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Le `localStorage`, accessible via `window.LlocalStorage`, est un interface donnant accès au stockage lié à un nom de domaine.
+Le `localStorage`, accessible via `window.localStorage`, est un interface donnant accès au stockage lié à un nom de domaine.
 Les données stockées dans le `localStorage` n'ont pas de date d'expiration.
 
 ## Initialisation du projet
